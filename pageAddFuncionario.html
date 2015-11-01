@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sgl - Add Funcionario</title>
+	<script src="bower_components/patform/platfrom.js"></script>
+	<link rel="import" href="bower_components/polymer/polymer.hmtl">
+</head>
+<body aling="center">
+	<header>
+		<div id="menu">
+			<nav>
+				<ul>
+					<li><a href="#" title="Home">Home</a></li>
+					<li><a href="#" title="Agendamento">Agendameto</a></li>
+					<li><a href="#" title="Produto">Produto</a></li>
+				</ul>
+			</nav>
+		</div>		
+	</header><!-- /header -->
+	<section>
+		<div>
+			<form action="#" method="post">
+				<label>Nome : </label><input type="text" name="nomeFuncionario" placeholder="Produto"><br>
+				<label>CPF : </label><input type="text" name="cpfFuncionario" placeholder="CPF"><br>
+				<label>RG : </label><input type="text" name="rgFuncionario" placeholder="CPF"><br>
+				<label>Telefone : </label><input type="tel" name="telefoneFuncionario" placeholder="(dd) 9999-9999"><br>
+				<label>Foto : </label><input type="file" name="fotoUsuariu"><br>
+				<label>Cargo : </label><input type="text" name="corgoFuncionario" placeholder="cargo"><br>
+				<label>Data de Nacimento : </label><input type="date" name="dataFuncionario"><br>
+				<hr>
+				<label>Endereço</label><br><br>
+				<label>Logradouro : </label><input type="text" name="logradouroFuncionario" placeholder="Rua, Avenida etc"><br>
+				<label>Bairro : </label><input type="text" name="bairroFuncionario"  placeholder="Bairro"><br>
+				<label>Cidade : </label><input type="text" name="cidadeFuncionario" placeholder="Cidade"><br><br><hr><br>
+				<label>Permissão : </label><select name="permicaoEstado">
+					<option value="supervisao">Supervisao</option>
+					<option value="gerente">Gerente</option>
+					<option value="almoxarifado">Almoxarifado</option>	
+					<option value="Funcionario">Funcionario</option>
+					</select><br>
+				<label>CEP : </label><input type="text" name="cepFuncionario"  placeholder="CEP"><br>
+				<label>Senha : </label><input type="password" name="senhaFuncionario"  placeholder="Senha"><br><br>			
+				<input type="submit" name="Envia" value="Adicionar">
+			</form>
+		</div>
+	</section>
+	<footer>
+		
+	</footer>
+</body>
+</html>
