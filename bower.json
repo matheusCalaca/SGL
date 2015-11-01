@@ -32,6 +32,7 @@
   ],
   "dependencies": {
     "polymer": "Polymer/polymer#1.2.0",
-    "platform": "Polymer/platform#~0.4.2"
+    "platform": "Polymer/platform#~0.4.2",
+    "paper-input": "PolymerElements/paper-input#~1.0.18"
   }
 }

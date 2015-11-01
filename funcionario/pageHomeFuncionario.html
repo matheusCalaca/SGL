@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Sgl - Produto</title>
+	<title>Sgl - Funcionario</title>
 	<script src="../bower_components/patform/platfrom.js"></script>
 	<link rel="import" href="../bower_components/polymer/polymer.hmtl">
 </head>
@@ -20,8 +20,7 @@
 	</header><!-- /header -->
 	<section>
 		<div>
-			<label>Busca Produto</label>
-			<input type="search" name="buscaProduto" placeholder="Search"><button><img src="#" alt="lupa de pesquisa"></button>
+			<label>Pesquisar : </label>	<input type="search" name="buscaFuncionario" placeholder="Nome Funcionario"><button><img src="#" alt="lupa de pesquisa"></button>
 		</div>
 	</section>
 	<section>
@@ -29,44 +28,36 @@
 			<table border="black 1px">
 				<thead>
 					<tr>
-						<th colspan="6" >Produtos Diponives</th>
+						<th colspan="5" >Lista de Funcionario</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<td>Produto</td>
-						<td>Imagem</td>
-						<td>Codigo</td>
-						<td>Novo Agrndamento</td>
-						<td>Opções</td>
+						<td>Nome</td>
+						<td>Foto</td>
+						<td>Função</td>
+						<td>Editar</td>
+						<td>Mais Iformações</td>
 					</tr>
 				</tbody>
 				<tfoot>
 					<tr>
-						<td>Projetor</td>
+						<td>Joaquin Manuel</td>
 						<td>
 							<figure>
-								<img src="#" alt="image do porduto">	
+								<img src="#" alt="Foto do Professor">	
 							</figure>
 						</td>
-						<td>123456</td>
+						<td>Professor</td>
 						<td>
-							<a href="#" title="adicionar agendamento">Add Agendamento</a>
+							<a href="#" title="Editar Professor">Editar</a>
 						</td>
 						<td>
-							<a href="#" title="Editar Produto">Editar</a>
-							<a href="#" title="Remover Produto">Remover</a>
+							<a href="#" title="Ver Inforamaçoes do Professor">Mais</a>
 						</td>
 					</tr>
 				</tfoot>
 			</table>
-		</div>
-		<div>
-			<ul>
-				<li>
-					<a href="#">Adicionar Produto</a>
-				</li>
-			</ul>
 		</div>
 	</section>
 	<footer>
