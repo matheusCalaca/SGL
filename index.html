@@ -1,34 +1,53 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>Sgl</title>
-	<script src="bower_components/patform/platfrom.js"></script>
-	<link rel="import" href="bower_components/polymer/polymer.hmtl">
+	<head>
+		<meta charset="utf-8">
+		<title>Sgl</title>
+		<script src="bower_components/platform/platform.js"></script>
+		<script src="bower_components/webcomponentsjs/webcomponents.js"></script>
 
-	<!--hhhhhhhh-->
-	<script src="http://www.polymer-project.org/1.0/samples/components/webcomponentsjs/webcomponents-lite.js"></script>
-    <link rel="import" href="proto-element.html">
-</head>
-<body aling="center">
-	<header>
-		
-	</header><!-- /header -->
-	<section>
-		<div id="imgLogin" class="imgLogin">
-			<figure>
-				<img src="#" alt="imagen de login">	
-			</figure>			
-		</div>
-		<form action="#" method="post" >
-			paper-input
-			<input type="text" name="Login" placeholder="CPF"><br>
-			<input type="password" name="senha" placeholder="Senha"><br>
-			<input type="submit" name="entrar" value="Entrar">
-		</form>
-	</section>
-	<footer>
-		
-	</footer>
-</body>
+		<script src="http://www.polymer-project.org/1.0/samples/components/webcomponentsjs/webcomponents-lite.js"></script>
+  		<script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+
+		<!--<link rel="import" href="bower_components/polymer/polymer.html">-->
+
+		<!--hahahahahahahaha-->
+		<!--
+	    <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js">
+	    </script>
+	    <link rel="import" href="bower_components/paper-button/index.html">
+	    <link rel="import" href="bower_components/paper-input/index.html">
+	    <link rel="import" href="bower_components/paper-header-panel/index.html">
+	  <link rel="import" href="/bower_components/paper-toolbar/index.html">
+	  <link rel="import" href="bower_components/iron-flex-layout/index.html">
+	  -->
+	</head>
+	<body aling="center">
+	 	<header>
+			
+		</header><!-- /header -->
+		<paper-card heading="Card title" image="" elevation="1" animated-shadow="true">
+		  <div class="card-content">
+		  	<div id="imgLogin" class="imgLogin">
+				<figure>
+					<img src="#" alt="imagen de login">	
+				</figure>			
+			</div>
+			<form action="#" method="post" >
+				<input type="text" name="Login" placeholder="CPF"><br>
+				<input type="password" name="senha" placeholder="Senha"><br>
+				<input type="submit" name="entrar" value="Entrar">
+			</form>
+		  </div>
+		  <div class="card-actions">
+		  	
+		  </div>
+		</paper-card>
+		<section>
+			
+		</section>
+		<footer>
+			
+		</footer>
+	</body>
 </html>
