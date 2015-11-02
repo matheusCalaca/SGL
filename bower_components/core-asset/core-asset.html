@@ -1,0 +1,116 @@
+<!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../polymer/polymer.html">
+
+<script>
+
+  (function(global) {
+
+    var requests = new Map();
+
+    global.CoreAsset = Polymer({
+      is: 'core-asset',
+
+      properties: {
+
+        /**
+         * The asset URL as a String.
+         */
+        href: {
+          type: String,
+          observer: '_hrefChanged',
+          value: null,
+        },
+
+        /**
+         * The asset URL as a URL.
+         */
+        url: {
+          type: URL,
+          value: null,
+        },
+
+        /**
+         * Whether or not the asset has been loaded.
+         */
+        loaded: {
+          type: Boolean,
+          value: false,
+        },
+
+        /**
+         * The XMLHttpRequest object.
+         */
+        request: {
+          type: Object,
+          // value: null,
+        }
+      },
+
+      created: function() {
+        this.baseUri = this.ownerDocument.baseURI;
+        this._loadedPromise = new Promise((function(resolve, reject) {
+          this._resolveLoad = resolve;
+          this._rejectLoad = reject;
+        }).bind(this));
+      },
+
+      load: function() {
+        return this._loadedPromise;
+      },
+
+      _requestAsset: function() {
+        var urlString = this.url.toString();
+        var request = requests.get(urlString);
+
+        if (request == null) {
+          this.request = request = new XMLHttpRequest();
+          requests.set(urlString, request);
+          request.open('GET', urlString, true);
+          request.send();
+          this._listen();
+        } else if (request.readyState == 4) {
+          this._fire();
+        } else {
+          this._listen();
+        }
+      },
+
+      _listen: function() {
+        // _listen() must only be called on an _incomplete_ request.
+        this.loaded = false;
+        this.content = null;
+
+        this.request.addEventListener('load', (function(e) {
+          this.content = this.request.response;
+          this.loaded = true;
+          this.fire('content-loaded', {content: this.content});
+          this._resolveLoad(this.content);
+        }).bind(this));
+
+        this.request.addEventListener('error', function (error) {
+          this._rejectLoad(error)
+        }.bind(this));
+
+        this.request.addEventListener('abort', function () {
+          this._rejectLoad(new Error('Request for asset aborted.'));
+        }.bind(this));
+      },
+
+      _hrefChanged: function(newValue, oldValue) {
+        this.url = new URL(this.href, this.baseUri);
+        this._requestAsset();
+      },
+
+    });
+  })(window);
+
+</script>

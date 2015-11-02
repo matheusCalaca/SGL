@@ -1,0 +1,23 @@
+{
+  "name": "core-asset",
+  "version": "0.3.0",
+  "private": true,
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.0.0"
+  },
+  "devDependencies": {
+    "webcomponentsjs": "webcomponents/webcomponentsjs",
+    "mocha": "mochajs/mocha#^2.1.0",
+    "chai": "chaijs/chai#^1.10.0"
+  },
+  "homepage": "https://github.com/PolymerLabs/core-asset",
+  "_release": "0.3.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.3.0",
+    "commit": "9a0828a20731f88f36a40e409c2150fd676b2181"
+  },
+  "_source": "git://github.com/PolymerLabs/core-asset.git",
+  "_target": "^0.3.0",
+  "_originalSource": "PolymerLabs/core-asset"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "core-asset",
+  "version": "0.3.0",
+  "private": true,
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.0.0"
+  },
+  "devDependencies": {
+    "webcomponentsjs": "webcomponents/webcomponentsjs",
+    "mocha": "mochajs/mocha#^2.1.0",
+    "chai": "chaijs/chai#^1.10.0"
+  }
+}
