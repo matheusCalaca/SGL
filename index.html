@@ -1,53 +1,59 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Sgl</title>
-		<script src="bower_components/platform/platform.js"></script>
-		<script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><!-- auxilia para o desenvolvimento mobile-->
+	<title>SGL</title><!--Titulo-->
+	<link rel="icon" href="imagem/DesenhoLogo/Logo.png"  type="image/png"/><!--icone-->
 
-		<script src="http://www.polymer-project.org/1.0/samples/components/webcomponentsjs/webcomponents-lite.js"></script>
-  		<script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+	<!--Conectores material designer lite-->
+	<link rel="stylesheet" href="bower_components/material-design-lite/material.min.css"><!--class de cor do designer  e CSS-->
+	<script src="bower_components/material-design-lite/material.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<!--meu CSS-->
+	<link rel="stylesheet" href="css/estilo.css">
 
-		<!--<link rel="import" href="bower_components/polymer/polymer.html">-->
-
-		<!--hahahahahahahaha-->
-		<!--
-	    <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js">
-	    </script>
-	    <link rel="import" href="bower_components/paper-button/index.html">
-	    <link rel="import" href="bower_components/paper-input/index.html">
-	    <link rel="import" href="bower_components/paper-header-panel/index.html">
-	  <link rel="import" href="/bower_components/paper-toolbar/index.html">
-	  <link rel="import" href="bower_components/iron-flex-layout/index.html">
-	  -->
-	</head>
-	<body aling="center">
-	 	<header>
-			
-		</header><!-- /header -->
-		<paper-card heading="Card title" image="" elevation="1" animated-shadow="true">
-		  <div class="card-content">
-		  	<div id="imgLogin" class="imgLogin">
-				<figure>
-					<img src="#" alt="imagen de login">	
-				</figure>			
+</head>
+<body>
+	<div class="mdl-layout mdl-js-layout layout-personalizada mdl-layout--fixed-header"><!--Layout-->
+		<header class="mdl-layout__header mdl-layout__header--transparent ">
+			<span class="mdl-layout-title span-personalizada__center-24size personalizada__no--ative">SGL- Sistema de Gerenciamento de Locação</span> 
+			<span class="mdl-layout-title span-personalizada__center-36size personalizada__ative layout__header-personalizada__no--ative">SGL</span>
+		</header><!-- /header do Layout -->
+		<main class="mdl-layout__content">
+			<div class="page-content marging__top-100px marging__top-50px">
+				<div class="mdl-grid verticalAlign">
+					
+					<div class="mdl-cell mdl-cell--8-col mdl-cell--4-col-phone mdl-cell--middle center">
+						<div class="mdl-card center mdl-shadow--6dp">
+							<div class="mdl-card__title center">
+								<i class="material-icons laranja layout__font-100size">account_circle</i>
+							</div>
+							<form action="#" class="mdl-card__personalizado--form">
+								<div class="mdl-card__media branco__backgrund">
+									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+										<label for="CPF" class="mdl-textfield__label">CPF</label>
+										<input type="text" name="CPF" id="CPF" class="mdl-textfield__input" pattern="[0-9]*">
+										<span class="mdl-textfield__error" for="CPF">Somente Numeros !</span>
+									</div>
+									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+										<label for="Senha" class="mdl-textfield__label">Senha</label>
+										<input type="password" name="Senha" id="Senha" class="mdl-textfield__input" requerid>
+									</div>
+								</div>
+								<div class="mdl-card__actions padding__let-110px center">
+									<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect mdl-shadow--4dp">
+										Entrar
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+					
+				</div>	
 			</div>
-			<form action="#" method="post" >
-				<input type="text" name="Login" placeholder="CPF"><br>
-				<input type="password" name="senha" placeholder="Senha"><br>
-				<input type="submit" name="entrar" value="Entrar">
-			</form>
-		  </div>
-		  <div class="card-actions">
-		  	
-		  </div>
-		</paper-card>
-		<section>
-			
-		</section>
-		<footer>
-			
-		</footer>
-	</body>
+		</main>
+	</div>
+	
+</body>
 </html>
