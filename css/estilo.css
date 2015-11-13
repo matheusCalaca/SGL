@@ -158,6 +158,14 @@
 	.layout-float--right{
 		float: right;
 	}
+/*HIDE*/
+	.layout-hide{
+		display: none;
+	}
+/*SHOW*/
+	.layout-show{
+		display: flex;
+	}
 /*especifico*/
 	.span-personalizada__center-24size{
 		margin: auto;

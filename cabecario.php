@@ -15,7 +15,7 @@
 	<!--meu JS-->
 	<script src="js/meu.js"></script>
 	<!-- Jquery -->
-	<script src="bower_components/jquery-2.1.4.min/index.js"></script>
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<!--meu Jquery -->
 	<script src="js/meu-jQuery.js"></script>
 </head>

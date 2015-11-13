@@ -14,6 +14,10 @@
 	<link rel="stylesheet" href="../css/estilo.css">
 	<!--meu JS-->
 	<script src="../js/meu.js"></script>
+		<!-- Jquery -->
+	<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+	<!--meu Jquery -->
+	<script src="../js/meu-jQuery.js"></script>
 </head>
 <body>
 	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-drawer">

@@ -1,4 +1,5 @@
 <?php include 'cabecario.php' ?>
+<span id="pagina" class="layout-hide" title="Home Produto" name="HomeProduto"></span>
 	<div calss="mdl-grid" id="pesquisa">
 		<div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cel--4-phone">
 			<i class="material-icons layout-float--left layout-margin--top-20px layout__font-30size">search</i>
@@ -133,4 +134,4 @@
 			</div>
 		</div>
 	</div>
-<?php include 'rodape.php'; ?>
+<?php include '../rodape.php'; ?>

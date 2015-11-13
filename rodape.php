@@ -1,11 +1,48 @@
-<?php include 'cabecario.php' ?>
 </main>
 		<footer class="mdl-mega-footer layout-display--none__phone layout-display--none__tablet">
-			<div id="botaoADD" class="layout-float--right layout-margin--top--45px">
+			<!--BOTOES ADD-->
+				<!--BOTOES ADD PRODUTO HOME-->
+			<div id="botaoADD" class="layout-float--right layout-margin--top--45px layout-hide" name="HomeProduto">
 				<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--8dp layout-z-6">
 					<i class="material-icons">add</i>
 				</button>
 			</div>
+			<div id="botaoADD" class="layout-float--right layout-margin--top--45px layout-hide" name="ProdutoAdd">
+				<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--8dp layout-z-6">
+					<i class="material-icons">add</i>
+				</button>
+			</div>
+			<div id="botaoADD" class="layout-float--right layout-margin--top--45px layout-hide">
+				<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--8dp layout-z-6">
+					<i class="material-icons">add</i>
+				</button>
+			</div>
+			<div id="botaoADD" class="layout-float--right layout-margin--top--45px layout-hide">
+				<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--8dp layout-z-6">
+					<i class="material-icons">add</i>
+				</button>
+			</div>
+			<div id="botaoADD" class="layout-float--right layout-margin--top--45px layout-hide">
+				<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--8dp layout-z-6">
+					<i class="material-icons">add</i>
+				</button>
+			</div>
+			<div id="botaoADD" class="layout-float--right layout-margin--top--45px layout-hide">
+				<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--8dp layout-z-6">
+					<i class="material-icons">add</i>
+				</button>
+			</div>
+			<div id="botaoADD" class="layout-float--right layout-margin--top--45px layout-hide">
+				<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--8dp layout-z-6">
+					<i class="material-icons">add</i>
+				</button>
+			</div>
+			<div id="botaoADD" class="layout-float--right layout-margin--top--45px layout-hide">
+				<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--8dp layout-z-6">
+					<i class="material-icons">add</i>
+				</button>
+			</div>
+			<!--RODAPE-->
 			<div class="mdl-mega-footer__left-section layout-margin--left-0px__tablet layout-width--335px__tablet layout-width--455px__max layout-margin--left-225px__max">
 				<div class="mdl-logo layout-float--left">
 					<img src="imagem/DesenhoLogo/Logo.png" alt="Logo da empresa" width="auto" height="32px" class="layout-float--left">
