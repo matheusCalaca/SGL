@@ -23,9 +23,9 @@
 	.layout-margin--top-15px{
 		margin-top: 15px;
 	}
-	.layout-margin--top--45px{
+	/*.layout-margin--top--45px{
 		margin-top: -45px;
-	}
+	}*/
 	.layout-margin--top--25px{
 		margin-top: -25px;
 	}
@@ -346,6 +346,7 @@
 		.personalizada__no--ative{
 			display: none;
 		}
+
 		
 		
 	}
@@ -359,6 +360,9 @@
 		}
 		.layout-display--none__pc{
 			display: none;
+		}
+		.layout-margin--top--45px{
+			margin-top: -45px;
 		}
 		
 	}

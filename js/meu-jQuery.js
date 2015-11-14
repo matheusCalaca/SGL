@@ -4,23 +4,28 @@
 });*/
 $(window).load(function() {
 
-		var qtBT = $('#botaoADD').nextAll().size();
-		for (var i = 1; i <= qtBT; i++) {
-			var nomePagina = $('#pagina').attr('name');
-			alert("nome pagina = "+nomePagina);	
-			var nomeBt = $('#botaoADD').attr('name');
-			alert("nome button = "+nomeBt);
+			var condicao = false;
+			var qtBT = $('#botaoADD').nextAll().size();
 
-			if(nomePagina == nomeBt){
-				$('#botaoADD').show('fast', function() {
-					$(this).removeClass('layout-hide');
+				var nomePagina = $('#pagina').attr('name');
+				alert("nome pagina = "+nomePagina);	
+				var nomeBt = $('#botaoADD').attr('name');
+				var bt = $('#botaoADD');
+				alert("nome button = "+nomeBt);
+			do{
+				if(nomePagina != nomeBt){
+					nomeBt = $(bt).next().attr('name');
+					bt = $(bt).next();
+				}
+					
+				if(nomePagina == nomeBt){
+					alert("nome button = "+(bt).attr('name'));
+					$(bt).show('fast', function() {
+						$(bt).removeClass('layout-hide');
+					});
+					var condicao = true;
+				}
+			}while(condicao != true);
 
-				});
-			}
-			
-			alert("nome pagina = "+ $('#botaoADD').attr('name').next());	
-		};
-		
-
-
+	
 });

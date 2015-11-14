@@ -1,4 +1,5 @@
 <?php include 'cabecario.php' ?>
+	<span id="pagina" class="layout-hide" title="Adiciona Funcionario" name="FuncionarioAdd"></span>
 	<div class="mdl-grid layout-margin-bottom--70px">
 		<div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cel--4-phone layout-width-100porcento height-45px">
 			<span class="mdl-layout-title">Adicianar um novo Funcionario</span>
@@ -71,4 +72,4 @@
 
 		</div>
 	</div>
-<?php include 'rodape.php'; ?>
+<?php include '../rodape.php'; ?>

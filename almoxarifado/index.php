@@ -1,4 +1,5 @@
 <?php include 'cabecario.php' ?>
+	<span id="pagina" class="layout-hide" title="Home Almoxarifado" name="HomeAlmoxarifado"></span>
 	<div class="mdl-grid layout-margin--top--25px">
 		<div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cel--4-phone layout-width-100porcento height-45px">
 			<h4>Lista de Agendamento</h4>
@@ -121,4 +122,4 @@
 			</div>
 		</div>
 	</div>
-<?php include 'rodape.php'; ?>
+<?php include '../rodape.php'; ?>
